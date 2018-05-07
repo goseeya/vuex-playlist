@@ -26,9 +26,9 @@ export default {
         ])
     },
     methods: {
-        reducePrice: function(amount){
-            this.$store.dispatch('reducePrice', amount)
-        }
+        ...mapActions([
+            'reducePrice'
+        ])
     }
 }
 </script>
